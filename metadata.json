@@ -1,0 +1,6 @@
+{
+  "name": "Lengua 1.º ESO — Español y Armenio",
+  "description": "Aplicación interactiva y bilingüe (español - armenio) para preparar Lengua Castellana y Literatura 1.º de ESO con teoría, 220+ ejercicios, juegos, memorización y exámenes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

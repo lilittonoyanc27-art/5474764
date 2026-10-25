@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 18.5px; /* Significantly larger, comfortable reading size */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Outfit', 'Noto Sans Armenian', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fcf9f6;
+    color: #1e1e24;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* User-controlled font zoom classes */
+html.font-size-standard {
+  font-size: 17px;
+}
+
+html.font-size-large {
+  font-size: 19px;
+}
+
+html.font-size-extralarge {
+  font-size: 21.5px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b1e2f;
+}
+
+/* Armenian typography styling */
+.font-armenian {
+  font-family: 'Noto Sans Armenian', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Highlight badge pulse animation */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.03); }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 2s infinite ease-in-out;
+}
